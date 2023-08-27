@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DOM Events Summary</title>
+</head>
+
+<body>
+    <h1>Final DOM Event Handlers</h1>
+    <h3 id="handler-status">Defalt Text</h3>
+    <button onclick="handlerOnClick()">Handle Event by Add Onlick Function</button>
+
+    <!-- // option-2  -->
+    <button id="event-lisenter">Handle event by addEventListener</button>
+    <br> <br>
+    <!-- // option-2 - recap  -->
+    <p id="set-name">Set Name</p>
+    <input id="input-field" type="text">
+    <button id="btn-update">Update</button>
+    <script>
+        function handlerOnClick() {
+            const handlerStatus = document.getElementById('handler-status');
+            handlerStatus.innerText = "Text change by onclick with function use"
+        }
+
+        <!-- // option-2  -->
+        document.getElementById('event-lisenter').addEventListener('click', function () {
+            const handlerStatus = document.getElementById('handler-status');
+            handlerStatus.innerText = 'Text change by onclick with addEventListener & function use'
+        })
+
+        // option-2 - recap
+        document.getElementById('btn-update').addEventListener('click', function () {
+            const inputField = document.getElementById('input-field');
+            const inputText = inputField.value;
+
+            const p = document.getElementById('set-name');
+            p.innerText = inputText;
+            inputField.value = '';
+        })
+
+    </script>
+</body>
+
+</html>
