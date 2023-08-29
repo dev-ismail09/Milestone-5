@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice File</title>
+</head>
+<body id="body-container">
+
+    <h1 id="text-change">Practice File</h1>
+    <section id="first-section">
+        <h1>First Section</h1>
+
+        <ul>
+            <li class="items">item-1</li>
+            <li class="items">item-2</li>
+            <li class="items">item-3</li>
+            <li class="items">item-4</li>
+            <li class="items">item-5</li>
+        </ul>
+    </section>
+
+    <section id="second-section">
+        <h1>Second Section</h1>
+
+        <ul>
+            <li class="items">item-6</li>
+            <li class="items">item-7</li>
+            <li class="items">item-8</li>
+            <li class="items">item-9</li>
+            <li class="items">item-10</li>
+        </ul>
+    </section>
+
+    <section id="third-section">
+        <h1>Third Section</h1>
+
+        <ul id="ul-section">
+            <li class="items">item-11</li>
+            <li class="items">item-12</li>
+            <li class="items">item-13</li>
+            <li class="items">item-14</li>
+            <li class="items">item-15</li>
+        </ul>
+    </section>
+    
+
+    <script>
+    const newElement = document.getElementById('ul-section');
+    const Li = document.createElement('li');
+    Li.innerText = 'new-item';
+    newElement.appendChild(Li);
+
+
+    const bodyContainer = document.getElementById('body-container');
+    const newSection = document.createElement('section');
+    const newH1 = document.createElement('h1');
+    newH1.innerText = 'New header';
+    const newUl = document.createElement('ul');
+    const newLi = document.createElement('li');
+    newLi.innerText = 'new item1';
+    const newLi2 = document.createElement('li');
+    newLi2.innerText = 'new item2';
+
+    bodyContainer.appendChild(newSection);
+    newSection.appendChild(newH1);
+    newSection.appendChild(newUl);
+    newUl.appendChild(newLi);
+    newUl.appendChild(newLi2);
+
+
+    </script>
+</body>
+</html>

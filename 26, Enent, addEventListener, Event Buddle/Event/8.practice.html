@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event practice</title>
+</head>
+<body>
+    <h1 id="text">DOM Event</h1>
+    <input id="text-field" type="text" placeholder="Please type delete">
+    <button id="btn-delete" disabled>Delete</button>
+    
+    <script>
+       document.getElementById('text-field').addEventListener('keyup', function(event){
+        const text = event.target.value;
+        const deleteButton = document.getElementById('btn-delete');
+        if(text == 'delete'){
+             deleteButton.removeAttribute('disabled');
+        }
+        else{
+            deleteButton.setAttribute('disabled', true);
+        }
+       })
+
+       document.getElementById('btn-delete').addEventListener('click', function(){
+        const removetext = document.getElementById('text');
+        removetext.style.display = 'none';
+       })
+
+    </script>
+</body>
+</html>

@@ -40,11 +40,12 @@
         <script>
            document.getElementById('item-2').addEventListener('click', function(){
             console.log('li item-2 clicked');
+            event.stopImmediatePropagation(); // or moto jotoi id thak just 1st ta input hobe
            })
            document.getElementById('item-2').addEventListener('click', function(event){
             console.log('li item-2 second clicked');
-            // event.stopPropagation();
-            event.stopImmediatePropagation();
+            //  event.stopPropagation();
+            //  event.stopImmediatePropagation();
            })
            document.getElementById('ul-section').addEventListener('click', function(){
             console.log('ul section clicked');
