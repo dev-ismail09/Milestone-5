@@ -1,3 +1,4 @@
+// 3rd
 function getPin(){
     const pin = generatePin();
     const pinString = pin + '';
@@ -10,11 +11,13 @@ function getPin(){
     }
 }
 
+// 2nd
 function generatePin(){
     const random = Math.round(Math.random()*10000);
     return random;
 }
 
+// 1st
 document.getElementById('generate-pin').addEventListener('click', function(){
     const pin = getPin();
     const displayPinField = document.getElementById('display-pin');

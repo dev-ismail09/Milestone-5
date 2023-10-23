@@ -38,13 +38,13 @@
 
 
         <script>
-           document.getElementById('item-2').addEventListener('click', function(){
+           document.getElementById('item-2').addEventListener('click', function(event){
             console.log('li item-2 clicked');
-            event.stopImmediatePropagation(); // or moto jotoi id thak just 1st ta input hobe
+            // event.stopImmediatePropagation(); // or moto jotoi id thak just 1st ta input hobe
            })
            document.getElementById('item-2').addEventListener('click', function(event){
             console.log('li item-2 second clicked');
-            //  event.stopPropagation();
+             event.stopPropagation(); // same id gular event ta ghotbe baki bubble hobe na- same lever er gula hobe
             //  event.stopImmediatePropagation();
            })
            document.getElementById('ul-section').addEventListener('click', function(){
@@ -58,7 +58,7 @@
             event.stopPropagation();
            })
            document.getElementById('body').addEventListener('click', function(){
-            console.log('body cslicked');
+            console.log('body clicked');
            })
         </script>
     </body>

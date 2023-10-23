@@ -1,8 +1,8 @@
 // getAttribute, setAttribute
 
 let element = document.getElementById('first-id');
-console.log(element.getAttribute('class'));
-console.log(element.getAttribute('id'));
+console.log(element.getAttribute('class')); // show korebe
+console.log(element.getAttribute('id')); // show korbe
 console.log(element.classList);
 console.log(element.classList.add('newThree'));
 console.log(element.classList.add('newFour'));

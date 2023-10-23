@@ -17,7 +17,7 @@
    5.1: click, focus, blur, onchange, keyup, keypress
    5.2: addEventListener onclick="myHandler()"
 
-6. use funtion to reduce duplicate code   
+6. use function to reduce duplicate code   
 
 7. event bubble and event delegate
 */

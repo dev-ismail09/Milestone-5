@@ -30,7 +30,7 @@ function updateCaseTotalPrice(newCaseNumber){
     caseTotalElement.innerText = caseTotalPrice;
 }
 
-
+// 1st - upore function diye kora hoyese
 document.getElementById('btn-case-plus').addEventListener('click', function(){
 //    const caseField = document.getElementById('case-field');
 //    const caseFieldString = caseField.value;
@@ -49,6 +49,7 @@ document.getElementById('btn-case-plus').addEventListener('click', function(){
 
 })
 
+// 2st - upore function diye kora hoyese
 document.getElementById('btn-case-minus').addEventListener('click', function(){
 //    const caseField = document.getElementById('case-field');
 //    const caseFieldString = caseField.value;
